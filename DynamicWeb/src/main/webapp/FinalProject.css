@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+body {
+	height: 100%;
+	background-color: #F0FFFF;
+	font-family: DFKai-SB;
+}
+
+.form {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn_log {
+	color: #5599FF;
+	background-color: #E0FFFF;
+	border-radius: 6px;
+	border: 1px #59a0a6 solid;
+	width: 120pt;
+	height: 20pt;
+	font-size: 12pt;
+}
+
+.btn_log:hover {
+	color: #5599FF;
+	background-color: #B0E0E6;
+	border: 1px #59a0a6 solid;
+	cursor: pointer;
+	width: 122pt;
+	height: 22pt;
+}
+
+#banner {
+	font-size: 25px;
+	font-family: Papyrus;
+	text-align: center;
+	cursor: default;
+	animation: bannerMove 10s infinite;
+	color:#f0ffff;
+}
+@keyframes bannerMove { 
+	0%{	background-color: #ADD8E6;}
+20%{background-color:#0044BB;}
+40%{background-color:#483D8B;}
+60%{background-color:#4169E1;}
+80%{background-color:#4682B4;}
+100%{background-color:#99BBFF;}
+}
+#register {
+	position: absolute;
+	top: 50;
+	bottom:50;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 12pt;
+	line-height: 25px; /*文字行距*/
+	text-align: center;
+}
+
+#success {
+	font-weight: bold;
+	color: #00AA00;
+	cursor: default;
+}
+
+#fail {
+	color: #FF0000;
+	font-weight: bold;
+	cursor: default;
+}
+
+#new {
+	font-weight: bold;
+	color: #0000CD;
+	cursor: default;
+}
+
+b {
+	cursor: default;
+}
+.btn_out {
+	color: #4848ff;
+	background-color: #87CEFA;
+	border: 1px #4848ff solid;
+	border-radius: 6px;
+	width: 45pt;
+	height: 14pt;
+	font-size: 10pt;
+}
+
+.btn_out:hover {
+	color: #4848ff;
+	border-width: 1px;
+	background-color: #56bbf8;
+	border: 1px #4848ff solid;
+	cursor: pointer;
+	width: 47pt;
+	height: 16pt;
+	
+}
+
+.btn_edit {
+	color: #5599FF;
+	background-color: #E0FFFF;
+	border-radius: 6px;
+	border: 1px #59a0a6 solid;
+	width: 38pt;
+	height: 16pt;
+	font-size: 10pt;
+}
+
+.btn_edit:hover {
+	color: #5599FF;
+	border-width: 1px;
+	background-color: #B0E0E6;
+	border: 1px #59a0a6 solid;
+	cursor: pointer;
+	width: 40pt;
+	height: 18pt;
+	
+}
+#mainpagecenter {
+	height: 50px;
+	color: #B8860B;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+	cursor: default;
+}
+#mainpageright {
+	height: 50px;
+	color: #B8860B;
+	text-align: right;
+	font-size: 16px;
+	cursor: default;
+}
+
+#mainpageleft {
+	color: #B8860B;
+	text-align: left;
+	font-size: 20px;
+	cursor: default;
+}
+
+
+fieldset{
+  font-weight:bold;
+  font-family:Times New Roman,"DFKai-SB";
+  margin: 1rem 0;
+  position: relative;
+}
+.personal{
+  border-color: #FFBB00;
+  color: #BBBB00;
+}
+.contact{
+ border-color: #8B0000 ;
+  color: #DC143C;
+}
+.like{
+border-color:#0000CD;
+  color: #191970;
+}
+.bio{
+border-color:#2E8B57;
+  color: #008080;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Error</title>
+<link rel="stylesheet" href="FinalProject.css">
+</head>
+<body>
+	<div id="banner">Do You Want To Say Something...?</div>
+	<div id="register">
+	  <form action="LoginCheck.do" method="post">
+			<p id="fail">帳號密碼有誤！！</p>
+			<p>
+				<b>請輸入帳號：</b><br /> 
+				<input type='text' name='account'><br />
+				<b>請輸入密碼：</b><br /> 
+				<input type='password' name='password'><br />
+			</p>
+			<input class='btn_log' type='submit' value='Log In'>
+	  </form><br/>
+	  <form action="EnterRegisterServlet.do" method='post'>
+		<b>尚未註冊帳號？</b><br />
+		<input class='btn_log' type='submit' value='Register'>
+	  </form>
+	</div>
+</body>
+</html>

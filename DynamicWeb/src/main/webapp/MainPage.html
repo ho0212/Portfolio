@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Say Something...</title>
+<link rel="stylesheet" href="FinalProject.css">
+<style>
+#comment {
+	overflow: auto;
+	height: 200px;
+}
+
+#commentarea {
+	bottom: 150px;
+}
+
+tr:nth-child(even) {
+	background-color: #886600;
+	color: #FFFFE0;
+	background-color: #886600
+}
+
+tr:nth-child(odd) {
+	background-color: #FFFFE0;
+	color: #886600;
+}
+
+tr:hover {
+	color: #483D8B;
+	background-color: #F0FFFF;
+}
+
+table {
+	text-align: left;
+	font-size: 14pt;
+}
+
+#input_box {
+	font-size: 12pt;
+	position: absolute;
+	top: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 120px;
+}
+
+#remove {
+	color: #483D8B;
+	background-color: #F0FFFF;
+}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function Post_method() {
+			// 取得容器
+			var newpost = document.getElementById('input_box').value;
+			// 建立新的<tr>元素
+			var node = document.createElement('tr');
+			var Today = new Date();
+			var currentTime = "發布日期:" + Today.getFullYear() + " 年 "
+					+ (Today.getMonth() + 1) + " 月 " + Today.getDate() + " 日";
+
+			//var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+			//var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+			//		return new bootstrap.Popover(popoverTriggerEl)
+			//})
+			//var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+			container: 'body'
+			//})
+			// 透過appendChild將建立的文字節點加入至node
+			node.appendChild(document.createTextNode(newpost));
+			document.querySelector('td').appendChild(node);
+			document.getElementById("remove").remove();
+
+		}
+	</script>
+	<div id="banner">Say Something...</div><br/>
+	<form action='LogOutServlet.do' method='post'>
+			<div id="mainpagecenter" style="float:left">
+				<b>你好，</b><a href='PersonalPage.html' id='hello_user'>name</a>
+			</div>
+			<div id="mainpageright">
+				<input class='btn_out' type='submit' value='Log Out' style="float:right;">
+			</div>
+	</form>
+	<h3 id="mainpageleft">留言區</h3>
+	<hr>
+	<div id="commentarea">
+		<div id="comment">
+			<table>
+				<tr>
+					<td><div id="remove">尚無內容...</div></td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div id="mainpageright">
+			<input class='btn_log' type='button' value='Post'
+				onclick='Post_method()'>
+		</div>
+	</div>
+	<textarea id='input_box'>輸入內容...</textarea>
+</body>
+</html>
