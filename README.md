@@ -1,5 +1,8 @@
 # Portfolio
 DrinkStore 資料夾為在個人簡歷的教育背景中所提及的Xamarin課程專題
+
 DynamicWeb 資料夾為在個人簡歷的教育背景中所提及的動態網頁程式設計課程專題
+
 MonsterHunter 資料夾為在個人簡歷的教育背景中所提及的C#物件導向程式設計課程專題
+
 SkinCancer 資料夾為在個人簡歷的教育背景中所提及的深度學習概論與應用課程專題
